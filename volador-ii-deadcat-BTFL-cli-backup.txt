@@ -20,6 +20,9 @@ signature
 # feature
 feature ESC_SENSOR
 
+# serial
+serial 0 131073 115200 57600 0 115200
+
 # beacon
 beacon RX_LOST
 beacon RX_SET
@@ -41,8 +44,8 @@ set serialrx_provider = CRSF
 set dshot_bidir = ON
 set yaw_motors_reversed = ON
 set small_angle = 180
-set osd_canvas_width = 30
-set osd_canvas_height = 13
+set osd_displayport_device = MSP
+set vcd_video_system = HD
 
 profile 0
 
