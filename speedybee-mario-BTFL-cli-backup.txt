@@ -1,0 +1,156 @@
+defaults nosave
+
+
+# version
+# Betaflight / STM32F405 (S405) 4.4.3 Nov 18 2023 / 06:49:34 (738127e7e) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name SPEEDYBEEF405V4
+manufacturer_id SPBE
+mcu_id 002f00473533510531303830
+signature 
+
+# feature
+feature ESC_SENSOR
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 3 0 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 2 1300 1700 0 0
+aux 2 2 2 1700 2100 0 0
+aux 3 13 5 1700 2100 0 0
+aux 4 35 3 1700 2100 0 0
+
+# vtxtable
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A CUSTOM     0    0    0    0    0    0    0    0
+vtxtable band 2 BOSCAM_B B CUSTOM     0    0    0    0    0    0    0    0
+vtxtable band 3 BOSCAM_E E CUSTOM  5705    0    0    0    0    0    0    0
+vtxtable band 4 FATSHARK F CUSTOM  5740 5760    0 5800    0    0    0    0
+vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 LOWBAND  L CUSTOM     0    0    0    0    0    0    0    0
+vtxtable powerlevels 5
+vtxtable powervalues 14 23 27 30 0
+vtxtable powerlabels 25 200 500 MAX 0
+
+# master
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set acc_calibration = 37,14,17,1
+set min_check = 1010
+set max_check = 1990
+set serialrx_provider = CRSF
+set dshot_bidir = ON
+set yaw_motors_reversed = ON
+set small_angle = 180
+set osd_warn_bitmask = 165757
+set osd_rssi_alarm = 40
+set osd_rssi_dbm_alarm = -100
+set osd_rsnr_alarm = 3
+set osd_cap_alarm = 5000
+set osd_tim1 = 25344
+set osd_tim2 = 25345
+set osd_vbat_pos = 2562
+set osd_rssi_pos = 474
+set osd_link_quality_pos = 2068
+set osd_link_tx_power_pos = 2050
+set osd_rssi_dbm_pos = 2061
+set osd_rsnr_pos = 2077
+set osd_tim_1_pos = 3594
+set osd_tim_2_pos = 3626
+set osd_flymode_pos = 2082
+set osd_throttle_pos = 3564
+set osd_vtx_channel_pos = 16
+set osd_crosshairs_pos = 236
+set osd_ah_pos = 199
+set osd_current_pos = 3081
+set osd_mah_drawn_pos = 3075
+set osd_craft_name_pos = 1041
+set osd_gps_speed_pos = 271
+set osd_gps_lon_pos = 82
+set osd_gps_lat_pos = 65
+set osd_gps_sats_pos = 1410
+set osd_home_dir_pos = 302
+set osd_home_dist_pos = 303
+set osd_compass_bar_pos = 265
+set osd_altitude_pos = 2210
+set osd_pid_roll_pos = 135
+set osd_pid_pitch_pos = 167
+set osd_pid_yaw_pos = 199
+set osd_debug_pos = 0
+set osd_power_pos = 320
+set osd_pidrate_profile_pos = 344
+set osd_warnings_pos = 2114
+set osd_avg_cell_voltage_pos = 2594
+set osd_pit_ang_pos = 256
+set osd_rol_ang_pos = 288
+set osd_battery_usage_pos = 32831
+set osd_disarmed_pos = 2550
+set osd_nheading_pos = 310
+set osd_esc_tmp_pos = 82
+set osd_esc_rpm_pos = 83
+set osd_log_status_pos = 1038
+set osd_stat_bitmask = 44189230
+set osd_displayport_device = MSP
+set osd_canvas_width = 50
+set osd_canvas_height = 18
+set vtx_band = 5
+set vtx_channel = 1
+set vtx_power = 4
+set vtx_low_power_disarm = UNTIL_FIRST_ARM
+set vtx_freq = 5658
+set vcd_video_system = HD
+
+profile 0
+
+# profile 0
+set feedforward_smooth_factor = 30
+set feedforward_jitter_factor = 9
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 2
+
+rateprofile 0
+
+# rateprofile 0
+set roll_rc_rate = 15
+set pitch_rc_rate = 15
+set yaw_rc_rate = 15
+set roll_expo = 57
+set pitch_expo = 57
+set yaw_expo = 57
+set roll_srate = 60
+set pitch_srate = 60
+set yaw_srate = 60
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 2
+
+# save configuration
