@@ -129,7 +129,7 @@ profile 2
 profile 3
 
 # restore original profile selection
-profile 2
+profile 0
 
 rateprofile 0
 
@@ -151,6 +151,6 @@ rateprofile 2
 rateprofile 3
 
 # restore original rateprofile selection
-rateprofile 2
+rateprofile 0
 
 # save configuration
