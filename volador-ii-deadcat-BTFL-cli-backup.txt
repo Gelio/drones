@@ -20,13 +20,35 @@ signature
 # feature
 feature ESC_SENSOR
 
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 2 1300 1700 0 0
+aux 2 2 2 1700 2100 0 0
+aux 3 13 5 1700 2100 0 0
+aux 4 35 3 1700 2100 0 0
+
 # master
+set dyn_notch_count = 1
+set dyn_notch_q = 500
 set acc_calibration = -44,13,0,1
+set min_check = 1010
+set max_check = 1990
 set serialrx_provider = CRSF
+set dshot_bidir = ON
+set yaw_motors_reversed = ON
+set small_angle = 180
 set osd_canvas_width = 30
 set osd_canvas_height = 13
 
 profile 0
+
+# profile 0
+set feedforward_smooth_factor = 30
+set feedforward_jitter_factor = 9
 
 profile 1
 
