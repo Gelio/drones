@@ -176,6 +176,14 @@ set yaw_srate = 60
 
 rateprofile 1
 
+# rateprofile 1
+set roll_expo = 56
+set pitch_expo = 56
+set yaw_expo = 56
+set roll_srate = 60
+set pitch_srate = 60
+set yaw_srate = 60
+
 rateprofile 2
 
 # rateprofile 2
@@ -195,6 +203,6 @@ rateprofile 4
 rateprofile 5
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 1
 
 # save configuration
