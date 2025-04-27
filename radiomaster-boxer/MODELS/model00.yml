@@ -1,4 +1,4 @@
-semver: 2.8.4
+semver: 2.10.6
 header: 
    name: "BOXER"
 timers: 
@@ -12,6 +12,7 @@ timers:
       persistent: 0
       countdownStart: 0
       showElapsed: 0
+      extraHaptic: 0
       name: ""
 telemetryProtocol: 0
 thrTrim: 0
@@ -26,6 +27,8 @@ extendedTrims: 0
 throttleReversed: 0
 enableCustomThrottleWarning: 0
 disableTelemetryWarning: 0
+showInstanceIds: 0
+checklistInteractive: 0
 customThrottleWarningPosition: 0
 beepANACenter: 0
 mixData: 
@@ -36,6 +39,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -51,6 +55,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -66,6 +71,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -81,6 +87,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -96,6 +103,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -111,6 +119,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -126,6 +135,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -141,6 +151,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -156,6 +167,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -171,6 +183,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -397,7 +410,19 @@ flightModeData:
          8:
             val: 0
 thrTraceSrc: Thr
-switchWarningState: AuBuCuDuEuFu
+switchWarning: 
+   SA:
+      pos: up
+   SB:
+      pos: up
+   SC:
+      pos: up
+   SD:
+      pos: up
+   SE:
+      pos: up
+   SF:
+      pos: up
 rssiSource: none
 rfAlarms: 
    warning: 45
@@ -446,3 +471,16 @@ screens:
                      val: TX_TIME
 view: 0
 modelRegistrationID: "*\x15*\x15!\x03%\x07"
+usbJoystickExtMode: 0
+usbJoystickIfMode: JOYSTICK
+usbJoystickCircularCut: 0
+radioGFDisabled: GLOBAL
+radioTrainerDisabled: GLOBAL
+modelHeliDisabled: GLOBAL
+modelFMDisabled: GLOBAL
+modelCurvesDisabled: GLOBAL
+modelGVDisabled: GLOBAL
+modelLSDisabled: GLOBAL
+modelSFDisabled: GLOBAL
+modelCustomScriptsDisabled: GLOBAL
+modelTelemetryDisabled: GLOBAL
