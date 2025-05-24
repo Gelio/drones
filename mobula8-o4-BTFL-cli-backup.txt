@@ -1,6 +1,5 @@
 defaults nosave
 
-# diff all
 
 # version
 # Betaflight / STM32F405 (S405) 4.3.2 Nov 28 2022 / 07:26:30 (60c9521) MSP API: 1.44
@@ -205,6 +204,6 @@ rateprofile 4
 rateprofile 5
 
 # restore original rateprofile selection
-rateprofile 1
+rateprofile 0
 
 # save configuration
