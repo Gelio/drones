@@ -1,5 +1,6 @@
 defaults nosave
 
+# diff all
 
 # version
 # Betaflight / STM32F405 (S405) 4.3.2 Nov 28 2022 / 07:26:30 (60c9521) MSP API: 1.44
@@ -130,6 +131,7 @@ set dterm_lpf1_dyn_max_hz = 120
 set dterm_lpf1_static_hz = 60
 set dterm_lpf2_static_hz = 120
 set vbat_sag_compensation = 100
+set crash_recovery = ON
 set p_pitch = 62
 set i_pitch = 99
 set d_pitch = 55
