@@ -1,0 +1,112 @@
+defaults nosave
+
+
+# version
+# Betaflight / STM32F411 (S411) 4.5.1 Apr 24 2025 / 03:44:25 (77d01ba3b) MSP API: 1.46
+# config rev: b78b689
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name TAKERF411
+manufacturer_id GEPR
+mcu_id 0035001c3233510d39363337
+signature 
+
+# name: T-Cube18 O4
+
+# feature
+feature TELEMETRY
+feature OSD
+
+# serial
+serial 0 131073 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1700 2100 0 0
+aux 2 13 2 1700 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 325
+set gyro_lpf2_static_hz = 650
+set gyro_lpf1_dyn_min_hz = 325
+set gyro_lpf1_dyn_max_hz = 650
+set acc_calibration = -112,39,19,1
+set baro_hardware = NONE
+set blackbox_sample_rate = 1/2
+set dshot_idle_value = 1250
+set motor_poles = 12
+set vbat_max_cell_voltage = 450
+set small_angle = 180
+set pid_process_denom = 2
+set simplified_gyro_filter_multiplier = 130
+set osd_vbat_pos = 2529
+set osd_rssi_pos = 65
+set osd_link_quality_pos = 3149
+set osd_rssi_dbm_pos = 3181
+set osd_throttle_pos = 2337
+set osd_craft_name_pos = 2113
+set osd_avg_cell_voltage_pos = 2561
+set debug_mode = GYRO_SCALED
+set gyro_1_sensor_align = CW0
+set gyro_1_align_yaw = 0
+set craft_name = T-Cube18 O4
+
+profile 0
+
+# profile 0
+set p_pitch = 52
+set i_pitch = 98
+set d_pitch = 50
+set f_pitch = 111
+set p_roll = 35
+set i_roll = 67
+set d_roll = 29
+set f_roll = 76
+set p_yaw = 35
+set i_yaw = 67
+set f_yaw = 76
+set angle_p_gain = 80
+set d_min_roll = 28
+set d_min_pitch = 48
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 65
+set feedforward_jitter_factor = 10
+set feedforward_max_rate_limit = 85
+set simplified_master_multiplier = 80
+set simplified_i_gain = 105
+set simplified_d_gain = 120
+set simplified_dmax_gain = 10
+set simplified_feedforward_gain = 80
+set simplified_pitch_d_gain = 150
+set simplified_pitch_pi_gain = 140
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
