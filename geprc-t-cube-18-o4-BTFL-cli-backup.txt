@@ -52,8 +52,10 @@ beacon RX_SET
 
 # aux
 aux 0 0 0 1700 2100 0 0
-aux 1 1 1 1700 2100 0 0
-aux 2 13 2 1700 2100 0 0
+aux 1 1 2 1300 1700 0 0
+aux 2 2 2 1700 2100 0 0
+aux 3 13 5 1700 2100 0 0
+aux 4 35 3 1700 2100 0 0
 
 # master
 set gyro_lpf1_static_hz = 325
