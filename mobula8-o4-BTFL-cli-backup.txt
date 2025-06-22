@@ -18,6 +18,10 @@ signature
 
 # name: Mobula8
 
+# resources
+resource I2C_SCL 2 B10
+resource I2C_SDA 2 B11
+
 # feature
 feature TELEMETRY
 feature OSD
