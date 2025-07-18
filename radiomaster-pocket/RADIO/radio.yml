@@ -1,7 +1,8 @@
-checksum: 44326
+checksum: 31466
 manuallyEdited: 0
 timezoneMinutes: 0
-semver: 2.10.0
+ppmunit: 0
+semver: 2.11.2
 board: pocket
 calib: 
    LH:
@@ -32,6 +33,7 @@ backlightMode: backlight_mode_all
 antennaMode: MODE_PER_MODEL
 disableRtcWarning: 1
 keysBacklight: 0
+dontPlayHello: 0
 internalModule: TYPE_CROSSFIRE
 trainer: 
    mix: 
@@ -72,12 +74,13 @@ hapticLength: 2
 beepLength: 2
 hapticStrength: 2
 gpsFormat: 0
+audioMuteEnable: 0
 speakerPitch: 0
 speakerVolume: 22
 vBatMin: 66
 vBatMax: 84
 backlightBright: 35
-globalTimer: 8646
+globalTimer: 8651
 bluetoothBaudrate: 0
 bluetoothMode: OFF
 countryCode: 0
@@ -103,6 +106,7 @@ serialPort:
 potsConfig: 
    P1:
       type: without_detent
+      inv: 0
       name: ""
 switchConfig: 
    SA:
@@ -125,7 +129,6 @@ bluetoothName: "73742Q-\x80\x0C"
 ownerRegistrationID: "POCKET"
 rotEncMode: 0
 uartSampleMode: 0
-audioMuteEnable: 0
 radioGFDisabled: 0
 radioTrainerDisabled: 0
 modelHeliDisabled: 0
@@ -136,3 +139,7 @@ modelLSDisabled: 0
 modelSFDisabled: 0
 modelCustomScriptsDisabled: 0
 modelTelemetryDisabled: 0
+disableTrainerPoweroffAlarm: 0
+disablePwrOnOffHaptic: 0
+invertLCD: 0
+pwrOffIfInactive: 0
